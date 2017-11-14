@@ -24,7 +24,7 @@ public class SMSPlus {
 	@Path("/SmsplusCharging")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response charging(
-			@DefaultValue("0")@QueryParam("access_key")String app_011022,
+			@DefaultValue("0")@QueryParam("access_key")String 16txmjkqcsikiad7z8l8,
 			@DefaultValue("0")@QueryParam("amount")String 50000,
 			@DefaultValue("0")@QueryParam("command_code")String XSMB,
 			@DefaultValue("0")@QueryParam("error_code")String errorCode,
