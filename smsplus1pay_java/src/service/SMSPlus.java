@@ -24,12 +24,12 @@ public class SMSPlus {
 	@Path("/SmsplusCharging")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response charging(
-			@DefaultValue("0")@QueryParam("access_key")String accKey,
-			@DefaultValue("0")@QueryParam("amount")String amount,
-			@DefaultValue("0")@QueryParam("command_code")String commandCode,
+			@DefaultValue("0")@QueryParam("access_key")String app_011022,
+			@DefaultValue("0")@QueryParam("amount")String 50000,
+			@DefaultValue("0")@QueryParam("command_code")String XSMB,
 			@DefaultValue("0")@QueryParam("error_code")String errorCode,
 			@DefaultValue("0")@QueryParam("error_message")String errorMessage,
-			@QueryParam("mo_message")String moMessage,
+			@QueryParam("mo_message")String MW XSMB NAP50,
 			@QueryParam("msisdn")String phone,
 			@QueryParam("request_id")String requestId,
 			@QueryParam("request_time")String requestTime,
@@ -87,9 +87,9 @@ public class SMSPlus {
 		return digest;
 	}
 
-	public String generateSignature(String access_key, String amount,
-			String command_code, String error_code, String error_message,
-			String mo_message, String phone, String request_id,
+	public String generateSignature(String MW TEST NAP, String 50000,
+			String XSMB, String error_code, String error_message,
+			String MW XSMB NAP50, String phone, String request_id,
 			String request_time, String secret) {
 		String urlParameters = "";
 		String signature = "";
