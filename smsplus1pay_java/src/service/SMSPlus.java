@@ -36,7 +36,7 @@ public class SMSPlus {
 			@QueryParam("signature")String signature){
 		
 		JSONObject json = new JSONObject();
-		String secret = ""; // Secret Key do 1pay cung cap. thay bang Secret Key cua ban
+		String secret = "e9sue5ayqa6si1zvn5gewwdv3bteyglm"; // Secret Key do 1pay cung cap. thay bang Secret Key cua ban
 		String sig = generateSignature(accKey, amount, commandCode, errorCode, errorMessage, moMessage, phone, requestId, requestTime, secret);
 		try {
 			if (signature.equalsIgnoreCase(sig)) {
